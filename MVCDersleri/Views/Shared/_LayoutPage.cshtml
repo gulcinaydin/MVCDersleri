@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+    <div class="container">
+
+        <div class="jumbotron">
+            @Html.ActionLink("Anasayfa", "Anasayfa", "Home", null, new { @class = "btn btn-primary" })
+            @Html.ActionLink("Hakkımızda", "Hakkimizda", "Home", null, new { @class = "btn btn-primary" })
+            @Html.ActionLink("İletişim", "Iletisim", "Home", null, new { @class = "btn btn-primary" })
+        </div>
+
+    <div>
+        @RenderBody()
+    </div>
+</body>
+</html>

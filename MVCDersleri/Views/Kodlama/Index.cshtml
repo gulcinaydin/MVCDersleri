@@ -1,0 +1,29 @@
+﻿
+@{
+    Layout = null;
+
+    string mesaj = " ";
+
+    if (IsPost)
+    {
+        mesaj = "<script lang = 'javascript'>var sonuc=confirm('Butona Tıkladınız');if(sonuc==true){window.location='/home/Sayfa'} else{window.location='/Home/Index'}</script>";
+    }
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div>
+        <form method="post">
+            <input type="submit" value="Çalıştır" />
+            @Html.Raw(mesaj)
+        </form>
+
+    </div>
+</body>
+</html>

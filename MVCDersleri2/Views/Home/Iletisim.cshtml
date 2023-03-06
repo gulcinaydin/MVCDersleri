@@ -1,0 +1,21 @@
+﻿
+@{
+    ViewBag.Title = "Iletisim";
+    Layout = "~/Views/Shared/_LayoutPage.cshtml";
+}
+
+<h2>Iletisim</h2>
+
+@Html.Partial("Partial");
+
+@ViewData["hak"]
+<br />
+@ViewBag.hakkimizda
+<br />
+@TempData["hakkimizda"]
+<br />
+
+<div class="row">
+    <div class="coll-md-6"></div>
+    <div class="coll-md-6">@Html.Partial("../_PartialPage")</div>
+</div>

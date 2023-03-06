@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container">
+
+        <div class="jumbotron">
+            <p>Asp.Net MVC İle Model</p>
+        </div>
+
+        @Html.ActionLink("Listeye Ekle", "Ekle")
+
+        <div class="row">
+
+            <div class="col-md-12">
+                @RenderBody()
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>

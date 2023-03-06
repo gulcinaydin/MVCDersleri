@@ -1,0 +1,26 @@
+﻿
+@{
+    ViewBag.Title = "Yeni";
+}
+
+<h2>Yeni</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    <div class="form-horizontal">
+        <div class="form-group">
+            <div class="control-label col-md-2">
+                Ürün Adı:
+            </div>
+            <div class="col-md-10">
+                <input type="text" name="urunAd" />
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Kaydet" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+}

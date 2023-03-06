@@ -1,0 +1,54 @@
+﻿@model IEnumerable<MVCModelExample.Models.Personel>
+@{
+    ViewBag.Title = "Listele";
+    Layout = "~/Views/Shared/_LayoutPage.cshtml";
+}
+
+<h2>Listele</h2>
+
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(m => m.Id)
+        </th>
+        <th>
+            @Html.DisplayNameFor(m => m.Ad)
+        </th>
+        <th>
+            @Html.DisplayNameFor(m => m.Soyad)
+        </th>
+        <th>
+            @Html.DisplayNameFor(m => m.TCKN)
+        </th>
+        <th>
+            @Html.DisplayNameFor(m => m.DogumTarihi)
+        </th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(mitem => item.Id)
+            </td>
+            <td>
+                @Html.DisplayFor(mitem => item.Ad)
+            </td>
+            <td>
+                @Html.DisplayFor(mitem => item.Soyad)
+            </td>
+            <td>
+                @Html.DisplayFor(mitem => item.TCKN)
+            </td>
+            <td>
+                @Html.DisplayFor(mitem => item.DogumTarihi)
+            </td>
+            <td>
+                @Html.ActionLink("Düzenle", "Duzenle", "Home", new { id = item.Id }, new { @class = "btn btn-warning" })
+            </td>
+            <td>
+                @Html.ActionLink("Sil", "Sil", "Home", new { id = item.Id }, new { @class = "btn btn-danger" })
+            </td>
+        </tr>
+    }
+</table>

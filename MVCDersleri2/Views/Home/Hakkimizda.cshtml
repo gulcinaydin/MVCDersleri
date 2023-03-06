@@ -1,0 +1,24 @@
+﻿
+@{
+    ViewBag.Title = "Hakkimizda";
+    Layout = "~/Views/Shared/_LayoutNested.cshtml";
+}
+
+<h2>Hakkimizda</h2>
+
+@section yan{
+    <p class="bg.success">Hakkımızda</p>
+}
+
+@Html.Partial("Partial")
+
+@ViewData["hak"]
+<br />
+@ViewBag.hakkimizda
+<br />
+@TempData["hakkimizda"]
+<br />
+<div class="row">
+   
+    <div class="coll-md-12">@Html.Partial("../_PartialPage")</div>
+</div>
