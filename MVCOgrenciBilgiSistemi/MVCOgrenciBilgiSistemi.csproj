@@ -9,17 +9,17 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{DA75FD32-49FA-440C-8ADF-4E81F72BAEA8}</ProjectGuid>
+    <ProjectGuid>{7DFFAF0E-4DB9-4B4A-BA4E-9933735376D7}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>MVCEntityFramework</RootNamespace>
-    <AssemblyName>MVCEntityFramework</AssemblyName>
+    <RootNamespace>MVCOgrenciBilgiSistemi</RootNamespace>
+    <AssemblyName>MVCOgrenciBilgiSistemi</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <MvcBuildViews>false</MvcBuildViews>
     <UseIISExpress>true</UseIISExpress>
     <Use64BitIISExpress />
-    <IISExpressSSLPort>44367</IISExpressSSLPort>
+    <IISExpressSSLPort>44317</IISExpressSSLPort>
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
@@ -127,14 +127,12 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\KategorisController.cs" />
-    <Compile Include="DAL\SatisContext.cs" />
+    <Compile Include="Controllers\FakulteController.cs" />
+    <Compile Include="DAL\OBSContext.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\Kategori.cs" />
-    <Compile Include="Models\Urun.cs" />
+    <Compile Include="Models\Fakulte.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -173,11 +171,7 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\Kategoris\Create.cshtml" />
-    <Content Include="Views\Kategoris\Delete.cshtml" />
-    <Content Include="Views\Kategoris\Details.cshtml" />
-    <Content Include="Views\Kategoris\Edit.cshtml" />
-    <Content Include="Views\Kategoris\Index.cshtml" />
+    <Content Include="Views\Fakulte\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -211,9 +205,9 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>51196</DevelopmentServerPort>
+          <DevelopmentServerPort>50136</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>https://localhost:44367/</IISUrl>
+          <IISUrl>https://localhost:44317/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
