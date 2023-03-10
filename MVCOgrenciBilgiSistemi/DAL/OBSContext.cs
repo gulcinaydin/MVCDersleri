@@ -12,6 +12,7 @@ namespace MVCOgrenciBilgiSistemi.DAL
     {
         public OBSContext() : base("OBSVeritabani") { }
         public DbSet<Fakulte> Fakulteler { get; set; }
+        public DbSet<Bolum> Bolumler { get; set; }
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
