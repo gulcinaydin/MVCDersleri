@@ -127,8 +127,10 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\BolumController.cs" />
     <Compile Include="Controllers\DosyalarController.cs" />
     <Compile Include="Controllers\FakulteController.cs" />
+    <Compile Include="Controllers\TestController.cs" />
     <Compile Include="DAL\OBSContext.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -185,6 +187,11 @@
     <Content Include="Views\Fakulte\Ekle.cshtml" />
     <Content Include="Views\Fakulte\FakultelerJson.cshtml" />
     <Content Include="Views\Dosyalar\Index.cshtml" />
+    <Content Include="Views\Bolum\FakultedekiBolumler.cshtml" />
+    <Content Include="Views\Fakulte\Fakulteler.cshtml" />
+    <Content Include="Views\Test\TestJS.cshtml" />
+    <Content Include="Views\Fakulte\TumFakulteler.cshtml" />
+    <Content Include="Views\Fakulte\Fakulte.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

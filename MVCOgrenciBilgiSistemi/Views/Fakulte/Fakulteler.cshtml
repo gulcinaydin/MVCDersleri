@@ -1,0 +1,23 @@
+﻿
+@{
+    ViewBag.Title = "Fakulteler";
+}
+
+<h2>Fakulteler</h2>
+<script src="~/Scripts/jquery-3.6.3.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('#btnBolumler').click(function () {
+            var fakulteId = document.getElementsByName("fakulteler")[0].value;
+            $('#bolumler').Load("../Bolum/FakultedekiBolumler/" + fakulteId);
+        });
+    )};
+</script>
+
+<div>
+    @Html.DropDownList("fakulteler", (List<SelectListItem>)ViewBag.Fakulteler)
+    <input value="Bölümler" type="button" id="btnBolumler" />
+</div>
+
+<hr />
+<div id="bolumler"></div>

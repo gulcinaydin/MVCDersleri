@@ -1,0 +1,28 @@
+﻿
+@{
+    ViewBag.Title = "TestJS";
+}
+
+<h2>TestJS</h2>
+<script src="~/Scripts/jquery-3.6.3.min.js"></script>
+
+<script>
+    $(document).ready(function () {
+        $.ajax({
+            type: "POST",
+            url: "MesajGoster",
+            contentType: "application/text;charset=utf-8",
+            dataType: "text",
+            success: function (msg) {
+                $('#jsKodlari').append("<script type=\"text/javascript\">" + msg + "<\/script>");
+            }
+        })
+        return false;
+
+    });
+
+</script>
+
+<input type="button" value="Mesaj Goster" id="btnMesajGoster" />
+<div id="jsKodlari"></div>
+

@@ -39,6 +39,32 @@ namespace MVCOgrenciBilgiSistemi.Controllers
         {
             return View();
         }
+        public ActionResult Fakulteler()
+        {
+            var fakulteler = veritabani.Fakulteler.ToList().Select(f => new SelectListItem
+            {
+                Selected = false,
+                Text = f.FakulteAd,
+                Value = f.Id.ToString()
+
+
+            }).ToList();
+
+            ViewBag.Fakulteler = fakulteler;
+            return View();
+        }
+
+        [ActionName("TumFakulteler")]
+        public ActionResult Detay()
+        {
+            return View();
+        }
+        [ActionName("Fakulte")]
+        public ActionResult Detay(int id)
+        {
+            ViewBag.FakulteId = id;
+            return View();
+        }
 
 
     }
