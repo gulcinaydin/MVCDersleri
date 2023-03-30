@@ -1,0 +1,18 @@
+﻿@model IEnumerable<MVCGrid.Models.Personel>
+@using GridMvc.Html
+@{
+    ViewBag.Title = "Listele";
+    Layout = "~/Views/Shared/_LayoutPage.cshtml";
+}
+
+<h2>Listele</h2>
+
+@Html.Grid(Model).Columns(column =>
+{
+    column.Add(mbox => mbox.Ad).Titled("Adlar");
+    column.Add(mbox => mbox.Soyad).Titled("Soyadlar");
+    column.Add(mbox => mbox.Yas).Titled("Yaşlar");
+
+
+}
+)
