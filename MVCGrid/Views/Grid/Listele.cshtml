@@ -7,12 +7,24 @@
 
 <h2>Listele</h2>
 
+@Html.ActionLink("Ekle", "Ekle", "Grid", null, new { @class = "btn btn-primary" })
+
 @Html.Grid(Model).Columns(column =>
 {
-    column.Add(mbox => mbox.Ad).Titled("Adlar");
-    column.Add(mbox => mbox.Soyad).Titled("Soyadlar");
-    column.Add(mbox => mbox.Yas).Titled("Yaşlar");
-
+    column.Add(mbox => mbox.Ad).Titled("Adlar").Sortable(true).Filterable(true);
+    column.Add(mbox => mbox.Soyad).Titled("Soyadlar").Sortable(true).Filterable(true);
+    column.Add(mbox => mbox.Yas).Titled("Yaşlar").Sortable(true).Filterable(true);
+    column.Add(mbox => mbox.Ulke).Titled("Ulkeler").Sortable(true).Filterable(true);
+    column.Add()
+    .Encoded(false)
+    .Sanitized(false)
+    .SetWidth(30)
+    .RenderValueAs(p => Html.ActionLink("Düzenle", "Duzenle", "Grid", new { id = p.Id }, new { @class = "btn btn-warning" }));
+    column.Add()
+    .Encoded(false)
+    .Sanitized(false)
+    .SetWidth(30)
+    .RenderValueAs(p => Html.ActionLink("Sil", "Sil", "Grid", new { id = p.Id }, new { @class = "btn btn-danger" }));
 
 }
-)
+).WithPaging(10)

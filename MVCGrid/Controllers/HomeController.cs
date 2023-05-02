@@ -12,7 +12,7 @@ namespace MVCGrid.Controllers
         DatabaseContext db = new DatabaseContext();
         public ActionResult Index()
         {
-            var model = db.Personeller.ToList();
+
             return View();
         }
 
