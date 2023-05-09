@@ -1,6 +1,7 @@
 ﻿using MVCFileUpload.Models;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
@@ -23,7 +24,6 @@ namespace MVCFileUpload.Controllers
         {
             MultipartFormDataStreamProvider streamProvider = new MultipartFormDataStreamProvider
                 (HttpContext.Current.Server.MapPath(TempFolder));
-
             try
             {
 
@@ -80,7 +80,7 @@ namespace MVCFileUpload.Controllers
 
                 using (FileUploadEntities entity = new FileUploadEntities())
                 {
-                    var file = entity.Files.FirstOrDefault(i => fileId == i.FileId);
+                    var file = entity.Files.FirstOrDefault(i => fileId == i.fileId);
                     entity.Files.Remove(file);
                     entity.SaveChanges();
                 }

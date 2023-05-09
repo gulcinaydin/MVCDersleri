@@ -9,23 +9,24 @@
 
 namespace MVCFileUpload.Models
 {
+    using MVCFileUpload.Controllers;
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
-    
+
     public partial class FileUploadEntities : DbContext
     {
         public FileUploadEntities()
             : base("name=FileUploadEntities")
         {
         }
-    
+
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             throw new UnintentionalCodeFirstException();
         }
-    
+
         public virtual DbSet<Files> Files { get; set; }
-        public virtual DbSet<sysdiagrams> sysdiagrams { get; set; }
+
     }
 }

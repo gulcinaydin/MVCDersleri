@@ -1,7 +1,8 @@
 ﻿namespace MVCFileUpload.Controllers
 {
-    internal class Files
+    public class Files
     {
+        internal int fileId;
         internal string fileUrl;
         internal string fileName;
     }
