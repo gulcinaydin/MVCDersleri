@@ -35,6 +35,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVCWebApi2", "MVCWebApi2\MV
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVCFileUpload", "MVCFileUpload\MVCFileUpload.csproj", "{286F5274-F232-445D-B3C9-3E1CAE4BEFE3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVCFiltreler", "MVCFiltreler\MVCFiltreler.csproj", "{670D1458-120C-47F7-9B8B-C7446E7837DB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVCFilter2", "MVCFilter2\MVCFilter2.csproj", "{A1B710AA-99B8-437A-A4D7-159155B1A286}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -105,6 +109,14 @@ Global
 		{286F5274-F232-445D-B3C9-3E1CAE4BEFE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{286F5274-F232-445D-B3C9-3E1CAE4BEFE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{286F5274-F232-445D-B3C9-3E1CAE4BEFE3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{670D1458-120C-47F7-9B8B-C7446E7837DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{670D1458-120C-47F7-9B8B-C7446E7837DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{670D1458-120C-47F7-9B8B-C7446E7837DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{670D1458-120C-47F7-9B8B-C7446E7837DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1B710AA-99B8-437A-A4D7-159155B1A286}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1B710AA-99B8-437A-A4D7-159155B1A286}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1B710AA-99B8-437A-A4D7-159155B1A286}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1B710AA-99B8-437A-A4D7-159155B1A286}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

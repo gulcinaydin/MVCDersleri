@@ -1,0 +1,12 @@
+﻿@model System.Web.Mvc.HandleErrorInfo
+@{
+    ViewBag.Title = "Hata";
+}
+
+<h2>Hata</h2>
+<h4></h4>
+<hgroup>
+    <h1>Error.</h1>
+    <h2>Controller:@Model.ControllerName-Action:@Model.ActionName</h2>
+    <h3>Hata:@Model.Exception.Message</h3>
+</hgroup>
