@@ -1,0 +1,52 @@
+﻿@using System.Web.Helpers
+
+<h2>ChartTekVeri</h2>
+
+@{
+    var grafik = new Chart(width: 500, height: 500);
+
+    grafik.AddTitle(text: "1.sınıflar Bahar Dönemi Not Ortalamaları");
+
+    grafik.AddLegend(title: "Veriler");
+
+    grafik.AddSeries(
+        name: "ortalamalar",
+        chartType: "Point",
+        xValue: new[] { "BM101", "BM102", "BM103" },
+        yValues: new[] { 80, 50, 90 });
+
+    grafik.AddSeries(
+       name: "standart sapma",
+       chartType: "Bubble",
+       xValue: new[] { "BM101", "BM102", "BM103" },
+       yValues: new[] { 40, 20, 30 });
+
+    grafik.AddSeries(
+        name: "sapma",
+        xValue: new[] { "BM101", "BM102", "BM103" },
+        yValues: new[] { 10, 70, 15 });
+
+    grafik.AddSeries(
+        name: "sapma2",
+        chartType: "Line",
+        xValue: new[] { "BM101", "BM102", "BM103" },
+        yValues: new[] { 50, 60, 45 });
+
+    grafik.AddSeries(
+       name: "sapma3",
+       chartType: "Spline",
+       xValue: new[] { "BM101", "BM102", "BM103" },
+       yValues: new[] { 70, 10, 65 });
+
+    grafik.AddSeries(
+       name: "sapma3",
+       chartType: "Area",
+       xValue: new[] { "BM101", "BM102", "BM103" },
+       yValues: new[] { 30, 10, 25 });
+
+
+
+    //Pie,SplineArea,Doughnut,Bar ve column tipleri de var. Bar yan çevrik hali.
+
+    grafik.Write();
+}

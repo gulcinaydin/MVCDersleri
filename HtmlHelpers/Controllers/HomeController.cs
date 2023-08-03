@@ -4,16 +4,11 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace MVCFilter2.Controllers
+namespace HtmlHelpers.Controllers
 {
     public class HomeController : Controller
     {
         public ActionResult Index()
-        {
-            return View();
-        }
-
-        public ActionResult Index2()
         {
             return View();
         }
@@ -25,7 +20,6 @@ namespace MVCFilter2.Controllers
             return View();
         }
 
-        [Authorize(Users = "ali@gmail.com")]
         public ActionResult Contact()
         {
             ViewBag.Message = "Your contact page.";

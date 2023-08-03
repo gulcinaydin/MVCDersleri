@@ -1,0 +1,47 @@
+﻿
+@{
+    ViewBag.Title = "Index2";
+}
+
+<h2>Index2</h2>
+
+<select>
+    <option>ilk</option>
+    <option>ikinci</option>
+</select>
+<hr />
+@Html.DropDownList("meslek",
+new[]
+{
+    new SelectListItem
+    {
+        Text="işçi",
+        Value="1"
+    },
+    new SelectListItem
+    {
+        Text="memur",
+        Value="2"
+    }
+
+}, "Bir seçim yazınız");
+
+@Html.ListBox("oda sayıları",
+    new[]
+{
+    new SelectListItem
+    {
+        Text="1+1",
+        Value="1"
+    },
+    new SelectListItem
+    {
+        Text="2+1",
+        Value="2"
+    }
+
+}, "Bir seçim yazınız");
+
+
+
+
