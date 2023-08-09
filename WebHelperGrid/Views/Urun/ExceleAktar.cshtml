@@ -1,0 +1,33 @@
+﻿@model IEnumerable<WebHelperGrid.Models.Urun>
+@{
+    Response.AddHeader("Content-disposition", "attachment:filenema=urunler.xls");
+    Response.ContentType = "application/octet-stream";
+
+    var urunler = Model;
+    var ilkSatir = urunler.FirstOrDefault();
+}
+<table style="border:1px solid black:">
+    <tr style="font-weight:bold">
+        @foreach (var ozellik in ilkSatir.GetType().GetProperties())
+        {
+            <td style="border:1px solid #ff0000;">@ozellik.Name</td>
+        }
+
+    </tr>
+    @foreach (var urun in urunler)
+    {
+        <tr>
+            @foreach (var urunOzelligi in urun.GetType().GetProperties())
+            {
+                <td style="border:1px solid black;">@urunOzelligi.GetValue(urun, null)</td>
+            }
+        </tr>
+    }
+
+</table>
+
+
+
+
+<h2>ExceleAktar</h2>
+

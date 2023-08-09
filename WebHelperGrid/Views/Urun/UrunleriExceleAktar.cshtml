@@ -1,0 +1,18 @@
+﻿@model IEnumerable<WebHelperGrid.Models.Urun>
+@{
+    ViewBag.Title = "UrunleriExceleAktar";
+    var grid = new WebGrid(Model);
+}
+
+<h2>UrunleriExceleAktar</h2>
+
+<input id="btExeleAktar" type="button" value="Excel'e Aktar" />
+<div id="sonuc"> </div>
+<script src="~/Scripts/jquery-3.4.1.min.js"></script>
+<script>
+    $(function){
+        $("btExeleAktar").on('click', function () {
+            $('<iframe src="/Urun/ExceleAktar"></iframe>').appendTo('#sonuc').hide();
+        });
+    });
+</script>

@@ -34,5 +34,17 @@ namespace WebHelper.Controllers
             resim.RotateRight(); //iki kere right veya left olabilir. FlipHorizontal olabilir,FlipVertical 
             resim.Write();
         }
+        public void ResmiBoyutlandır()
+        {
+            WebImage resim = new WebImage(ResimYolu);
+            resim.Resize(100, 100, preserveAspectRatio: true);
+            resim.Write();
+        }
+        public void ResmeYaziEkleme()
+        {
+            WebImage resim = new WebImage(ResimYolu);
+            resim.AddITextWatermark("Gülo", fontColor: "White", fontSize: 20);
+            resim.Write();
+        }
     }
 }
