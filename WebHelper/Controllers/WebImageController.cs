@@ -43,7 +43,7 @@ namespace WebHelper.Controllers
         public void ResmeYaziEkleme()
         {
             WebImage resim = new WebImage(ResimYolu);
-            resim.AddITextWatermark("Gülo", fontColor: "White", fontSize: 20);
+            resim.AddTextWatermark("Gülo", fontColor: "White", fontSize: 20);
             resim.Write();
         }
     }

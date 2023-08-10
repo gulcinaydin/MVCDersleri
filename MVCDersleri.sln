@@ -45,6 +45,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebHelper", "WebHelper\WebH
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebHelperGrid", "WebHelperGrid\WebHelperGrid.csproj", "{1BE85F75-0F5D-4868-AAB0-FFD4669D3FE8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVCDurumYönetimi", "MVCDurumYönetimi\MVCDurumYönetimi.csproj", "{BC60CBFD-B13D-40E7-A163-19D8F15E95FA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVC-Jquery", "MVC-Jquery\MVC-Jquery.csproj", "{8F66D0F1-D0F3-421B-957A-58661FBE747B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -135,6 +139,14 @@ Global
 		{1BE85F75-0F5D-4868-AAB0-FFD4669D3FE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1BE85F75-0F5D-4868-AAB0-FFD4669D3FE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1BE85F75-0F5D-4868-AAB0-FFD4669D3FE8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC60CBFD-B13D-40E7-A163-19D8F15E95FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC60CBFD-B13D-40E7-A163-19D8F15E95FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC60CBFD-B13D-40E7-A163-19D8F15E95FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC60CBFD-B13D-40E7-A163-19D8F15E95FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F66D0F1-D0F3-421B-957A-58661FBE747B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F66D0F1-D0F3-421B-957A-58661FBE747B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F66D0F1-D0F3-421B-957A-58661FBE747B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F66D0F1-D0F3-421B-957A-58661FBE747B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
