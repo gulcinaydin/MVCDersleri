@@ -1,0 +1,33 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Urun</title>
+    <script src="~/Scripts/jquery-3.7.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#btn").click(function () {
+
+                $.getJSON('https://localhost:44374/api/UrunApi/Urun').done(function (urun) {
+
+                    alert(urun.Ad);
+
+                })
+            })
+        })
+
+
+    </script>
+</head>
+<body>
+    <div>
+        <input type="button" id="btn" value="Tıkla" />
+    </div>
+</body>
+</html>
