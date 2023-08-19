@@ -1,0 +1,53 @@
+﻿
+@{
+    Layout = null;
+
+
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>DosyaYukleme</title>
+    <script src="~/Scripts/jquery-3.7.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $.kontrolSayisi = 1;
+            $("#btnDosyaKontroluEkle").click(function () {
+                if ($.kontrolSayisi <= 20) {
+                    $.sonDosyaKontroluDivi = $("#dosya" + $.kontrolSayisi);
+                    $.yeniDosyaKontroluveDiv = $.sonDosyaKontroluDivi.clone(true);
+                    $.yeniDosyaKontroluveDiv.attr("id", "dosya" + (++$.kontrolSayisi));
+                    $.yeniDosyaKontroluveDiv.insertAfter($.sonDosyaKontroluDivi);
+                }
+            })
+        })
+    </script>
+</head>
+<body>
+    <div>
+        @if (ViewBag.Message != null)
+        {
+            <h1> @ViewBag.Message </h1>
+        }
+        @using (Html.BeginForm("CokluDosyaYukleme", "Home", FormMethod.Post, new { @enctype = "multipart/form-data", @id = "form1" }))
+        {
+            <div id="dosyakontrolleri">
+                <div id="dosya1">
+                    <input type="file" name="dosya" />
+
+                </div>
+
+                <input type="button" id="btnDosyaKontroluEkle" value="Bir tane ekle" />
+                <br /><br />
+                <input type="submit" id="btnYukle" value="Yükle" />
+
+            </div>
+        }
+
+
+    </div>
+</body>
+</html>

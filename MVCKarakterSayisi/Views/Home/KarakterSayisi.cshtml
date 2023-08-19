@@ -1,0 +1,54 @@
+﻿
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>KarakterSayisi</title>
+    <script src="~/Scripts/jquery-3.7.0.min.js"></script>
+    <script>
+
+        $(document).ready(function () {
+            $.enFazlaKarakterSayisi = 50;
+            $.karakterSayisi = $('#durum').val().length;
+            $.kalanKarakterSayisi = $.enFazlaKarakterSayisi - $.karakterSayisi;
+
+            $('#kalanKarakterSayisi').text($.kalanKarakterSayisi + " karakter kaldı").css("color", "black");
+
+            $('#durum').keyup(function () {
+                $.karakterSayisi = $('#durum').val().length;
+                $.kalanKarakterSayisi = $.enFazlaKarakterSayisi - $.karakterSayisi;
+                $('#kalanKarakterSayisi').text($.kalanKarakterSayisi + " karakter kaldı");
+
+                if ($.kalanKarakterSayisi > 20) {
+                    console.log($.kalanKarakterSayisi)
+                    $('#kalanKarakterSayisi').css("color", "grey");
+                    $("#durumGonder").removeAttr("disabled");
+                }
+                else if ($.kalanKarakterSayisi >= 0) {
+                    $('#.kalanKarakterSayisi').css("color", "#5c0000");
+                    $("#durumGonder").removeAttr("disabled");
+                }
+                else {
+                    $('#kalanKarakterSayisi').css("color", "red");
+                    $("#durumGonder").removeAttr("disabled");
+                }
+
+            })
+
+        })
+
+    </script>
+</head>
+<body>
+    <div>
+        <input type="text" id="durum" style="width:300px;" /> <br />
+        <input type="button" id="durumGonder" value="Gönder" />
+    </div>
+
+    <div id="kalanKarakterSayisi"></div>
+
+</body>
+</html>

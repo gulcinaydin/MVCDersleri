@@ -51,6 +51,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVC-Jquery", "MVC-Jquery\MV
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVCAjaxIslemleri", "MVCAjaxIslemleri\MVCAjaxIslemleri.csproj", "{466F7E70-EAF2-43CD-B40F-A3251810D089}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVCCokluDosyaYukleme", "MVCCokluDosyaYukleme\MVCCokluDosyaYukleme.csproj", "{11D34C75-F510-4A3C-A167-35E567B91BEC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVCTablodakiTumKayitlar", "MVCTablodakiTumKayitlar\MVCTablodakiTumKayitlar.csproj", "{3BF6B661-0375-474E-ACE6-286A576C838E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVCKarakterSayisi", "MVCKarakterSayisi\MVCKarakterSayisi.csproj", "{5CBCFB7D-981E-4F94-9125-06FA0097A7FC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVCWebApiToken", "MVCWebApiToken\MVCWebApiToken.csproj", "{77E4F54F-2383-442D-B92B-748A5F8DB9E8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -153,6 +161,22 @@ Global
 		{466F7E70-EAF2-43CD-B40F-A3251810D089}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{466F7E70-EAF2-43CD-B40F-A3251810D089}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{466F7E70-EAF2-43CD-B40F-A3251810D089}.Release|Any CPU.Build.0 = Release|Any CPU
+		{11D34C75-F510-4A3C-A167-35E567B91BEC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11D34C75-F510-4A3C-A167-35E567B91BEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11D34C75-F510-4A3C-A167-35E567B91BEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11D34C75-F510-4A3C-A167-35E567B91BEC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3BF6B661-0375-474E-ACE6-286A576C838E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3BF6B661-0375-474E-ACE6-286A576C838E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3BF6B661-0375-474E-ACE6-286A576C838E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3BF6B661-0375-474E-ACE6-286A576C838E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5CBCFB7D-981E-4F94-9125-06FA0097A7FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5CBCFB7D-981E-4F94-9125-06FA0097A7FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5CBCFB7D-981E-4F94-9125-06FA0097A7FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5CBCFB7D-981E-4F94-9125-06FA0097A7FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77E4F54F-2383-442D-B92B-748A5F8DB9E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77E4F54F-2383-442D-B92B-748A5F8DB9E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77E4F54F-2383-442D-B92B-748A5F8DB9E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77E4F54F-2383-442D-B92B-748A5F8DB9E8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
