@@ -59,6 +59,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVCKarakterSayisi", "MVCKar
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVCWebApiToken", "MVCWebApiToken\MVCWebApiToken.csproj", "{77E4F54F-2383-442D-B92B-748A5F8DB9E8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApiToken", "WebApiToken\WebApiToken.csproj", "{5B6923B5-874C-451B-8179-B9AC4EDB7CA0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -177,6 +179,10 @@ Global
 		{77E4F54F-2383-442D-B92B-748A5F8DB9E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{77E4F54F-2383-442D-B92B-748A5F8DB9E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{77E4F54F-2383-442D-B92B-748A5F8DB9E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B6923B5-874C-451B-8179-B9AC4EDB7CA0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B6923B5-874C-451B-8179-B9AC4EDB7CA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B6923B5-874C-451B-8179-B9AC4EDB7CA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B6923B5-874C-451B-8179-B9AC4EDB7CA0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
